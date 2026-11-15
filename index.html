@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DigitalHub Store | Digital Products</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #172033;
+}
+
+header {
+  background: #10172b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #45e0b0;
+  font-size: 27px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #cbd5e1;
+}
+
+nav {
+  background: #19243d;
+  padding: 14px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  font-size: 14px;
+}
+
+.hero {
+  background: linear-gradient(135deg,#10172b,#174e65);
+  color: white;
+  padding: 65px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #dce8f5;
+  line-height: 1.7;
+}
+
+.hero button {
+  background: #45e0b0;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 7px;
+  margin-top: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section {
+  padding: 35px 18px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #10172b;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+}
+
+.product {
+  background: white;
+  padding: 23px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #0000000c;
+  text-align: center;
+}
+
+.product .emoji {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.product h3 {
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: #657087;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 43px;
+}
+
+.product button {
+  background: #10172b;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-top: 17px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product button:hover {
+  background: #087f68;
+}
+
+.info {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contact {
+  background: #10172b;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact p {
+  margin: 12px 0;
+}
+
+.whatsapp {
+  display: inline-block;
+  background: #20c76a;
+  color: white;
+  text-decoration: none;
+  padding: 15px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+footer {
+  background: #080e1d;
+  color: #aeb9ca;
+  padding: 18px;
+  text-align: center;
+  font-size: 13px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>DigitalHub Store</h1>
+  <p>Your Trusted Digital Services Marketplace</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#vpn">VPN</a>
+  <a href="#social">Social Media</a>
+  <a href="#streaming">Streaming</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+  <h2>Welcome to DigitalHub Store</h2>
+  <p>
+    Discover VPN subscriptions, social media services
+    and authorized streaming subscriptions.
+  </p>
+  <button onclick="document.getElementById('vpn').scrollIntoView()">
+    Explore Products
+  </button>
+</section>
+
+<section class="section" id="vpn">
+  <h2>🔐 VPN Subscriptions</h2>
+  <div class="products">
+
+    <div class="product">
+      <div class="emoji">🛡️</div>
+      <h3>Premium VPN</h3>
+      <p>Secure and private internet browsing.</p>
+      <button onclick="order('Premium VPN subscription')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">🌍</div>
+      <h3>Global VPN</h3>
+      <p>VPN service with multiple server locations.</p>
+      <button onclick="order('Global VPN subscription')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">⚡</div>
+      <h3>Fast VPN</h3>
+      <p>VPN service for everyday browsing.</p>
+      <button onclick="order('Fast VPN subscription')">Order on WhatsApp</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="social">
+  <h2>📱 Social Media Services</h2>
+  <div class="products">
+
+    <div class="product">
+      <div class="emoji">🎵</div>
+      <h3>TikTok Services</h3>
+      <p>Content promotion and account growth services.</p>
+      <button onclick="order('TikTok promotion services')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">📘</div>
+      <h3>Facebook Services</h3>
+      <p>Page management and promotional services.</p>
+      <button onclick="order('Facebook services')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">📸</div>
+      <h3>Instagram Services</h3>
+      <p>Instagram content and marketing services.</p>
+      <button onclick="order('Instagram services')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">𝕏</div>
+      <h3>X / Twitter Services</h3>
+      <p>Social media promotion and management.</p>
+      <button onclick="order('X Twitter services')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">▶️</div>
+      <h3>YouTube Services</h3>
+      <p>Channel management and content promotion.</p>
+      <button onclick="order('YouTube services')">Order on WhatsApp</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="streaming">
+  <h2>🎬 Streaming Subscriptions</h2>
+  <div class="products">
+
+    <div class="product">
+      <div class="emoji">🍿</div>
+      <h3>Netflix</h3>
+      <p>Authorized Netflix subscription options.</p>
+      <button onclick="order('Authorized Netflix subscription')">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">📺</div>
+      <h3>Other Streaming Plans</h3>
+      <p>Ask us about other authorized streaming services.</p>
+      <button onclick="order('Other streaming subscriptions')">Order on WhatsApp</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="info">
+    <h2>Why Choose DigitalHub?</h2>
+    <p>
+      ✔ Easy ordering<br>
+      ✔ Customer support<br>
+      ✔ Digital subscriptions<br>
+      ✔ Convenient WhatsApp ordering<br>
+      ✔ Transparent product information
+    </p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or want to place an order?</p>
+  <p>Our WhatsApp support is available for enquiries.</p>
+
+  <a class="whatsapp"
+     href="https://wa.me/2349164525352"
+     target="_blank">
+     Chat With Us on WhatsApp
+  </a>
+  <p>WhatsApp: +2349164525352</p>
+</section>
+
+<footer>
+  <p>© 2026 DigitalHub Store. All Rights Reserved.</p>
+  <p>Digital services supplied subject to provider terms.</p>
+</footer>
+
+<script>
+function order(product) {
+  const phone = "2349164525352";
+  const message = "Hello DigitalHub Store! I am interested in: " + product;
+  const url = "https://wa.me/" + phone +
+              "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
